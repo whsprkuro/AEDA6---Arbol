@@ -8,16 +8,12 @@
 #include "nodo.hpp"
 
 template <class Clave>
-nodoBB<Clave>::nodoBB(Clave X):
-	dato(X), hijoizq(NULL), hijodch(NULL){}
+nodoBB<Clave>::nodoBB():
+	hijoizq(NULL), hijodch(NULL){}
 
 template <class Clave>
-nodoBB<Clave>::nodoBB(const nodoBB<Clave> &Obj):
-dato(Obj.dato), hijoizq(Obj.hijoizq), hijodch(Obj.hijodch){
-//	this->dato = Obj.dato;
-//	this->hijoizq = Obj.hijoizq;
-//	this->hijodch = Obj.hijodch;
-}
+nodoBB<Clave>::nodoBB(Clave X):
+	dato(X), hijoizq(NULL), hijodch(NULL){}
 
 template <class Clave>
 nodoBB<Clave>::~nodoBB(){}

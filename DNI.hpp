@@ -35,6 +35,7 @@ public:
 	bool operator <=(DNI &d);
 	bool operator >=(DNI &d);
 	friend ostream& operator<<(ostream& os, const DNI& dni);
+	friend istream& operator>>(istream& is, DNI& dni);
 
 	operator unsigned long();
 	operator char*();

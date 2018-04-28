@@ -23,8 +23,8 @@ public:
 	nodoBB<Clave>* hijodch;//derecho
 
 public:
+	nodoBB();
 	nodoBB(Clave X);
-	nodoBB(const nodoBB<Clave>&);
 	~nodoBB();
 
 	void mostrarNodo();

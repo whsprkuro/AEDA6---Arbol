@@ -85,6 +85,10 @@ ostream& operator<<(ostream& os, const DNI& dni){
     return os << dni.numdni;
 }
 
+istream& operator>>(istream& is, DNI& dni){
+	return is >> dni.numdni;
+}
+
 DNI::operator unsigned long(){
 	return strtoul(numdni.c_str(), NULL, 0);
 }
